@@ -20,9 +20,14 @@ export const routes = [
     component: () => import("@/pages/Starter/index.vue")
   },
   {
+    path: "/theme",
+    name: "Theme",
+    component: () => import("@/pages/Theme/index.vue")
+  },
+  {
     path: "/main",
     name: "Main",
-    component: () => import("@/pages/Login/index.vue")
+    component: () => import("@/pages/Main/index.vue")
   }
 ];
 

@@ -12,7 +12,8 @@ setTimeout(() => {
 setTimeout(() => {
   titleShow.value = false
   setTimeout(() => {
-    router.push('/main')
+    // TODO 判断是否是第一次进入，如果是第一次进入，跳转到主题选择页
+    router.push('theme')
   }, 1000)
 }, 3000)
 </script>

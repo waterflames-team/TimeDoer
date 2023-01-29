@@ -76,11 +76,12 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
         "resizable": false,
         "title": "睹时-TimeDoer",
-        "width": 800,
-        "decorations": false
+        "width": 1080,
+        "height": 720,
+        "x": 0,
+        "y": 0
       }
     ],
     "systemTray": {
