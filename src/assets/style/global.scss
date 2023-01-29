@@ -1,0 +1,22 @@
+@import "./theme.scss";
+
+/*公共字体的样式 */
+@font-face {
+  font-family: misan-light;
+  src: url('../fonts/MiSans-Light.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: misan-bold;
+  src: url('../fonts/MiSans-Demibold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: alimama;
+  src: url('../fonts/Alimama_ShuHeiTi_Bold.woff2') format('woff2'),
+}
+
+
+img {
+  -webkit-user-drag: none;
+}

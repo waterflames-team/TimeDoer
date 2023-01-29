@@ -1,17 +1,30 @@
 <script lang='ts' setup>
-import { onMounted } from 'vue';
-import { initStore, initSQL } from '@/utils/index';
+import { onMounted, ref } from 'vue';
+import { initStore, initSQL, getStore } from '@/utils/index';
 
-import Login from '@/pages/Login/index.vue';
+const theme = ref('light')
 
-onMounted(() => {
+onMounted(async () => {
   initStore();
   initSQL()
+  theme.value = await getStore('theme')
 });
 </script>
 
-<template>
-  <Suspense>
-    <Login />
-  </Suspense>
+<template >
+  <section :theme="theme" class="content">
+    <suspense>
+      <router-view />
+    </suspense>
+  </section>
 </template>
+
+<style lang="scss" scoped>
+.content {
+  background: var(--background);
+  color: var(--text);
+
+  @apply flex justify-center items-center h-screen overflow-hidden break-all
+}
+</style>
+

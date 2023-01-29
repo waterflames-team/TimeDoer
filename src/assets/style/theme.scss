@@ -1,0 +1,13 @@
+section[theme="light"] {
+  --text: #1F2021;
+  --text-emphasis: ##007BFF;
+  --text-fade: linear-gradient(135deg, #A9C8FC 0%, #DFB6FF 100%);
+  --background: linear-gradient(135deg, #D6E4FC 0%, #F5E8FF 99%);
+}
+
+section[theme="dark"] {
+  --text: #EBEBEB;
+  --text-emphasis: #1C5AC2;
+  --text-fade: linear-gradient(135deg, #45608F 0%, #6E498A 100%);
+  --background: linear-gradient(135deg, #33435E 0%, #553D67 100%);
+}
