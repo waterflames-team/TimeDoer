@@ -79,7 +79,8 @@
         "height": 600,
         "resizable": false,
         "title": "睹时-TimeDoer",
-        "width": 800
+        "width": 800,
+        "decorations": false
       }
     ],
     "systemTray": {
