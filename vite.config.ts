@@ -2,6 +2,8 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import UnoCSS from 'unocss/vite'
+import transformerDirectives from '@unocss/transformer-directives'
+
 import { presetUno } from 'unocss'
 import presetIcons from '@unocss/preset-icons'
 
@@ -20,8 +22,13 @@ export default defineConfig({
         presetIcons(),
         presetUno(),
       ],
-    })
+      transformers: [
+        transformerDirectives(),
+      ],
+    }),
+
   ],
+
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   // prevent vite from obscuring rust errors
