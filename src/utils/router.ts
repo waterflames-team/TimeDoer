@@ -27,7 +27,24 @@ export const routes = [
   {
     path: "/main",
     name: "Main",
-    component: () => import("@/pages/Main/index.vue")
+    component: () => import("@/pages/Main/index.vue"),
+    children: [
+      {
+        path: "timer",
+        name: "Timer",
+        component: () => import("@/pages/Main/tabs/timer.vue"),
+      },
+      {
+        path: "schedule",
+        name: "Schedule",
+        component: () => import("@/pages/Main/tabs/schedule.vue"),
+      },
+      {
+        path: "history",
+        name: 'History',
+        component: () => import("@/pages/Main/tabs/history.vue"),
+      }
+    ]
   }
 ];
 

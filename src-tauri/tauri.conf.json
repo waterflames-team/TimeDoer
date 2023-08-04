@@ -42,11 +42,11 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.time_doer",
+      "identifier": "TimeDoer",
       "longDescription": "睹时-TimeDoer 用时钟带领一天",
       "macOS": {
         "entitlements": null,
-        "exceptionDomain": "hdslb.com",
+        "exceptionDomain": "",
         "frameworks": [],
         "providerShortName": null,
         "signingIdentity": null
@@ -56,7 +56,7 @@
       "targets": [
         "deb",
         "msi",
-        "app"
+        "dmg"
       ],
       "windows": {
         "certificateThumbprint": null,
@@ -80,8 +80,7 @@
         "title": "睹时-TimeDoer",
         "width": 1080,
         "height": 720,
-        "x": 0,
-        "y": 0
+        "decorations": false
       }
     ],
     "systemTray": {

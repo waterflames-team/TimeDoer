@@ -53,7 +53,7 @@ onMounted(() => {
         <span>{{ item.name }}</span>
       </div>
     </div>
-    <div class="next" @click="$router.push('main')"></div>
+    <div class="next" @click="$router.push('main/timer')"></div>
   </div>
 </template>
 
